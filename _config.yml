@@ -1,0 +1,20 @@
+name: fngryboi
+description:
+meta_description:
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://fngryboi.github.io'
+google_analytics: 'UA-XXXXXXXX-X'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url:            'http://fngryboi.github.io'
+author:         'fngryboi'
+
+# General Jekyll Config
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
