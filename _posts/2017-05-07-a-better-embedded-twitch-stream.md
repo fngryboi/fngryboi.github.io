@@ -9,13 +9,13 @@ published: true
 
 Do you have a website where you want to embed a Twitch stream (maybe your own channels stream), but only show it when the channel is actually live?
 
-I had the same problem so I decided to throw together a quick script to solve this problem...
+I had the same problem so I decided to throw together a quick script to solve this problem which you can see below.
 
 <script src="https://gist.github.com/fngryboi/f5323765e3358ae27d4a97eb2d63aa3c.js"></script>
 
 Also if you want to have more stuff that shows up only when the stream is live, then you could encapsulate the twitch div with a parent div like this (don't forget to move the hiding class to the parent):
 
-´´´
+```
 <div id="parent" class="hide"> <!-- named parent for demonstration purposes, you can name it whatever you want -->
 
 <!-- Here you can place anything you want to show above the embedded stream -->
@@ -27,11 +27,11 @@ Also if you want to have more stuff that shows up only when the stream is live, 
 
 </div>
 
-´´´
+```
 
 But to make this work you need to change the javascript bit so it targets the parent div and not the twitch div, like this:
 
-´´´
+```
 
 var player = new Twitch.Player("twitch", options); // ***** Changed from "twitch" to "parent"
 var options = {
@@ -62,7 +62,7 @@ function handleOffline() {
   player.setMuted(true);
 }
 
-´´´
+```
 
 Note: I've highlighted all the changes that were made with ´// ***** Changed from "twitch" to "parent"´.
 
