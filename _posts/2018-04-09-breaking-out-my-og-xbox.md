@@ -18,7 +18,7 @@ However, the reason I decided to bring out the Xbox in the first place was from 
 
 Once in I decided to change up everything into the way I wanted it to look, so I swapped the EvolutionX dashboard for the UnleashX (because it has more features and better skin support). Changed the skin so it looked like the original Microsoft dashboard on the Xbox. Cleaned up all the naming and backed up all the games I had stored from the discs to my NAS including everything else just in case the hard drive would fail. I also went ahead and added a few applications and emulators to play around with.
 
-Some of the advantages to having a modded Xbox that I learned is no region locking, higher resolutions (European consoles were locked at 480i, now I can go all the way to 1080i with the right cables), ease of use and ease of mind (I can rip my games and not have to deal with getting off the couch or wearing down the DVD drive or the game discs, just play them from the harddrive) and lastly running unsigned software such as Homebrews, applications etc.
+Some of the advantages to having a modded Xbox that I learned is no region locking, higher resolutions (European consoles were locked at 480i, now I can go all the way to 1080i with the right video cable), ease of use and ease of mind (I can rip my games and not have to deal with getting off the couch or wearing down the DVD drive or the game discs, just play them from the harddrive) and lastly running unsigned software such as Homebrews, applications etc.
 
 Now that I finally have it the way I want it to be I can focus on the good stuff that I'm about to delve into. Which is making homebrew games for the original Xbox.
 
