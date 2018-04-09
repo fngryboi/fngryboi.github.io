@@ -20,9 +20,9 @@ portfolio: true
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %} <br>
-                {% if page.about %} <a href='{{ site.baseurl }}{{ site.about }}'>About me</a> {% endif %}
-                &bull;
                 {% if page.portfolio %} <a href='{{ site.baseurl }}{{ site.portfolio }}'>Portfolio</a> {% endif %}
+                &bull;
+                {% if page.about %} <a href='{{ site.baseurl }}{{ site.about }}'>About me</a> {% endif %}
             </h2>
         </div>
     </div>
