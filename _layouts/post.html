@@ -65,8 +65,7 @@ about: 'about.html'
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <figure class="author-image">
-                    {% if page.about %}<a class="img" href="{{ site.baseurl }}{{ page.about }}" style="background-image: url(/assets/images/profile.png)">
-                    {% else %}<a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">{% endif %}
+                    <a class="img" href="{{ site.baseurl }}{% if page.about %}{{ page.about }}{% endif %}" style="background-image: url(/assets/images/profile.png)">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
