@@ -15,7 +15,7 @@ I had the same problem so I decided to throw together a quick script to solve th
 
 Also if you want to have more stuff that shows up only when the stream is live, then you could encapsulate the twitch div with a parent div like this (don't forget to move the hiding class to the parent):
 
-```
+{% highlight html %}
 <div id="parent" class="hide"> <!-- named parent for demonstration purposes, you can name it whatever you want -->
 
 <!-- Here you can place anything you want to show above the embedded stream -->
@@ -27,11 +27,11 @@ Also if you want to have more stuff that shows up only when the stream is live, 
 
 </div>
 
-```
+{% endhighlight %}
 
 But to make this work you need to change the javascript bit so it targets the parent div and not the twitch div, like this:
 
-```
+{% highlight javascript %}
 
 var player = new Twitch.Player("twitch", options); // ***** Changed from "twitch" to "parent"
 var options = {
@@ -62,7 +62,7 @@ function handleOffline() {
   player.setMuted(true);
 }
 
-```
+{% endhighlight %}
 
 Note: I've highlighted all the changes that were made with ´// ***** Changed from "twitch" to "parent"´.
 
