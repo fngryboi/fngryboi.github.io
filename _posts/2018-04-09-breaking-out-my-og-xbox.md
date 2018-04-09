@@ -3,21 +3,25 @@ layout: post
 title: Breaking out my original Xbox
 categories:
   - original xbox
+  - xbox
   - homebrew
 published: true
 ---
 
-> Blog post is in progress, nothing here is final! Come back later for the finished article :)
-
 A few days ago I decided to make a melancholy day a little more exciting by taking out my original Xbox, that had been stored in a box under my bed for too long.
 
-The last time I really used it was when I was around 10 years old, my English wasn't good enough to understand any dialogue so I'd stick to the multiplayer games with friends or the games that weren't heavy with dialogue. The Xbox had been modded at one point, and apparently some great work went into it. It got a bigger harddrive, a TSOP chip, new capacitors, latest version of the EvolutionX Dashboard with some applications and emulators. To little old me it didn't exactly click for me what all that allowed me to do, all I knew was that I could backup a game to the Xbox and then turn in the game at a game store and get some money to buy a new game, even though I technically still had the game. Today I obviously regret getting rid of those games, and I'm working on getting them back.
+The last time I really used it was when I was around 10 years old, my English wasn't good enough to understand any dialogue so I'd stick to the multiplayer games with friends or the games that weren't heavy with dialogue. I played games such as Halo 1 & 2, Oddworld: Munch's Odyssey, Fusion Frenzy, Ninja Gaiden (didn't get very far though...).
 
-However, the reason I even decided to take the Xbox out for a spin was from watching a video by ModernVintageGamer. Specifically [this](https://www.youtube.com/watch?v=x7FmelyC70Y) one where he talks about writing code for the Xbox and the Homebrew scene. Once I'd played around with my Xbox and done some more research I came across the subreddit [r/originalxbox](https://www.reddit.com/r/originalxbox/). Where there's a lot of great material on their [Wiki](https://www.reddit.com/r/originalxbox/wiki/index). The first thing I picked up was that the dashboard had an FTP server included, so I downloaded FileZilla to my laptop and connected to the Xbox.
+My Xbox had been modded at some point, and a great deal of love went into it. It got a bigger harddrive, TSOP flashed, new capacitors, latest version of the EvolutionX Dashboard with some applications and emulators and lots of other bells and whistles. To little old me that didn't really mean much, all I knew was that I could backup a game to the Xbox and then turn in the game at a game store and get some money to buy a new game, even though I technically still had the game. Today I obviously regret getting rid of those games, and I'm working on getting them back.
 
-So I decided to clean up everything inside the Dashboard and turn it into my liking, so I did away with the EvolutionX dashboard in favor of UnleashX (because it has more features and better skin support). Changed the skin to one that is as close to the original Xbox dashboard as it could possibly get.
+However, the reason I even decided to take the Xbox out for a spin was from watching a video by ModernVintageGamer. Specifically [this](https://www.youtube.com/watch?v=x7FmelyC70Y) one where he talks about writing code for the Xbox and the Homebrew scene. And from there I went to the original Xbox subreddit [r/originalxbox](https://www.reddit.com/r/originalxbox/). Where there's a lot of great material on their [Wiki](https://www.reddit.com/r/originalxbox/wiki/index). The first thing I picked up was that the dashboard was running a FTP server right out of the box, so I downloaded FileZilla and connected to the Xbox.
 
+Once in I decided to change up everything into the way I wanted it to look, so I swapped the EvolutionX dashboard for the UnleashX (because it has more features and better skin support). Changed the skin so it looked like the original Microsoft dashboard on the Xbox. Cleaned up all the naming and backed up all the games I had stored from the discs to my NAS including everything else just in case the hard drive would fail. I also went ahead and added a few applications and emulators to play around with.
 
-That video inspired me into bringing out my Xbox because at the same time I've just finished a 3D graphics course where I learned to program with DirectX11.
+Some of the advantages to having a modded Xbox that I learned is no region locking, higher resolutions (European consoles were locked at 480i, now I can go all the way to 1080i with the right cables), ease of use and ease of mind (I can rip my games and not have to deal with getting off the couch or wearing down the DVD drive or the game discs, just play them from the harddrive) and lastly running unsigned software such as Homebrews, applications etc.
 
-So I could take that which I learned and downgrade it to DirectX8
+Now that I finally have it the way I want it to be I can focus on the good stuff that I'm about to delve into. Which is making homebrew games for the original Xbox.
+
+In doing my research I came across this website called XBDEV.NET that have tutorials for programming with the Xbox Dev Kit (XDK for short). Xbox basically runs on a version of DirectX (hence the name of the console), which works out great for me because I've just finished a 3D graphics course where I learned to program with DirectX11. All I have to do is basically downgrade a few versions… Not quite, but that's what's coming up next for me. I think I'm going to start out with taking some assets from an older 2D game and use that when starting out with writing my first homebrew.
+
+That's all for now, but there's more to come!
