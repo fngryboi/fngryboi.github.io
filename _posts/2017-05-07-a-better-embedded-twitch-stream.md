@@ -68,3 +68,5 @@ function handleOffline() {
 Note: I've highlighted all the changes that were made from the old "twitch" div to the new "parent" div with `// *****`.
 
 That's all you really need to get started. However, if you have some web design skills you can really take this to the next level.
+
+Good luck!
