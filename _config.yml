@@ -6,8 +6,8 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: 'http://fngryboi.github.io'
-domain_name: 'http://fngryboi.github.io'
+baseurl: 'http://fngryboi.github.io/'
+domain_name: 'http://fngryboi.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
