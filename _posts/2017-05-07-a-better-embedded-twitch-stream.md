@@ -34,7 +34,7 @@ But to make this work you need to change the javascript bit so it targets the pa
 
 {% highlight javascript %}
 
-var player = new Twitch.Player("twitch", options); // *****
+var player = new Twitch.Player("twitch", options);
 var options = {
   channel: "USERNAME", // TODO: Change this...
   width: 640,
