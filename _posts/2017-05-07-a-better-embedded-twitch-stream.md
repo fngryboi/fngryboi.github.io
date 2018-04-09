@@ -3,6 +3,7 @@ title: Embed stream only when it's live
 layout: post
 categories:
   - streaming
+  - twitch.tv
   - scripts
 published: true
 ---
