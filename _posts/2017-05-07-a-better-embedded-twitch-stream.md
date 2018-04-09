@@ -1,5 +1,5 @@
 ---
-title: Twitch.tv - Embed stream only when it's live
+title: Embed stream only when it's live
 layout: post
 categories:
   - streaming
@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-Do you have a website where you want to embed a Twitch stream (maybe your own channels stream), but only show it when the channel is actually live?
+Do you have a website where you want to embed a Twitch.tv stream (maybe your own channels stream), but only show it when the channel is actually live?
 
 I had the same problem so I decided to throw together a quick script to solve this problem which you can see below.
 
@@ -33,9 +33,9 @@ But to make this work you need to change the javascript bit so it targets the pa
 
 {% highlight javascript %}
 
-var player = new Twitch.Player("twitch", options); // ***** Changed from "twitch" to "parent"
+var player = new Twitch.Player("twitch", options); // *****
 var options = {
-  channel: "USERNAME", // TODO: Change this to the streams username you want to embed
+  channel: "USERNAME", // TODO: Change this...
   width: 640,
   height: 360,
 };
@@ -49,14 +49,14 @@ function initiate() {
 }
 
 function handleOnline() {
-  document.getElementById("parent").classList.remove('hide'); // ***** Changed from "twitch" to "parent"
+  document.getElementById("parent").classList.remove('hide'); // *****
   player.removeEventListener(Twitch.Player.ONLINE, handleOnline);
   player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
   player.setMuted(false);
 }
 
 function handleOffline() {
-  document.getElementById("parent").classList.add('hide'); // ***** Changed from "twitch" to "parent"
+  document.getElementById("parent").classList.add('hide'); // *****
   player.removeEventListener(Twitch.Player.OFFLINE, handleOffline);
   player.addEventListener(Twitch.Player.ONLINE, handleOnline);
   player.setMuted(true);
@@ -64,6 +64,6 @@ function handleOffline() {
 
 {% endhighlight %}
 
-Note: I've highlighted all the changes that were made with ´// ***** Changed from "twitch" to "parent"´.
+Note: I've highlighted all the changes from "twitch" to "parent" that were made with `// *****`.
 
 That's all you really need to get started. However, if you have some web design skills you can really take this to the next level.
