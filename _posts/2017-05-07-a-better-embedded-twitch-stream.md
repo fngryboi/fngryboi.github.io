@@ -7,7 +7,9 @@ categories:
 published: true
 ---
 
-If you have a website where you want to embed a Twitch stream (maybe your own channels stream), but only show it when the channel is actually live. I had the same problem so I decided to throw together a quick script to solve this problem which you can see below.
+Do you have a website where you want to embed a Twitch stream (maybe your own channels stream), but only show it when the channel is actually live?
+
+I had the same problem so I decided to throw together a quick script to solve this problem which you can see below.
 
 <script src="https://gist.github.com/fngryboi/f5323765e3358ae27d4a97eb2d63aa3c.js"></script>
 
