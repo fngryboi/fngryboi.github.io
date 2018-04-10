@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-![My Profile Picture](/assets/images/profile.png)
+![My Profile Picture]({{ site.baseurl }}assets/images/profile.png)
 
 I feel like I need an explanation for my nickname so here goes: My nickname for anything on the Internet has been "fngryboi" for a very long time, and since I have a shirt with the name imprinted from Dreamhack there's no going back. It was originally inspired by "Jnkboy", AKA Markus Toivonen, who's known for being the art-designer for Minecraft, as I was a big fan of his pixelart work during the time I was trying to come up with a nickname (his stuff can be found [here](http://jnkboy.tumblr.com), great stuff!).
 
