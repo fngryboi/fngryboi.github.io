@@ -8,7 +8,7 @@ categories:
 published: true
 ---
 
-A few days ago I decided to make a melancholy day a little more exciting by taking out my original Xbox, that had been stored in a box under my bed for too long.
+A few days ago I decided to make a melancholy day a little more exciting by taking out my original Xbox, that had been stored in a box under my bed for too long...
 
 The last time I really used it was when I was around 10 years old, my English wasn't good enough to understand any dialogue so I'd stick to the multiplayer games with friends or the games that weren't heavy with dialogue. I played games such as Halo 1 & 2, Oddworld: Munch's Odyssey, Fusion Frenzy, Ninja Gaiden (didn't get very far though...) to mention a few.
 
