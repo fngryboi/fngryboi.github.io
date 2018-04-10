@@ -51,14 +51,17 @@
             }
         }
 
+        #wrap {
+          min-height: 100%;
+          min-width: 100%;
+        }
+
         #infozone {
           position: relative;
           float: left;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          height: 100%;
-          width: 100%;
         }
 
         #infozone h1 {
@@ -74,9 +77,10 @@
       <source src="/assets/video/404.ogv" type="video/ogg">
     </video>
   </div>
-
-  <div id="infozone">
-    <h1>Where's the page?</h1>
+  <div id="wrap">
+    <div id="infozone">
+      <h1>Where's the page?</h1>
+    </div>
   </div>
 </body>
 </html>
