@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,7 +74,7 @@
           /*whatever width you want*/
         }
 
-        .inner h1, p {
+        .inner h1, p, a {
           color: #fff;
         }
     </style>
@@ -86,8 +90,10 @@
   <div class="outer">
     <div class="middle">
       <div class="inner">
-        <h1>Where's the page?</h1>
-        <p>404, couldn't be found. Return to <a href="{{site.baseurl}}">home?</a></p>
+        <center>
+          <h1>Where's the page?</h1>
+          <p>404, couldn't be found. Return to <a href="{{ site.baseurl }}">home?</a></p>
+        </center>
       </div>
     </div>
   </div>
