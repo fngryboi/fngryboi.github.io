@@ -3,4 +3,4 @@ layout: page
 title: Portfolio
 ---
 
-under construction
+Coming soon&trade;
