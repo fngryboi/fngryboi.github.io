@@ -13,17 +13,17 @@ I'm a guy in my 20s who's studying Game Development at University, with a specia
 The games I really want to make are either in Virtual Reailty or for retro consoles. Currently I'm trying my hand at making a game for the original Xbox but I'm also working on a few VR game ideas.
 
 A few of my favorite games of all time include (in no particular order):
- - Oddworld games (Munch's Odyssey, Abe's Odyssey)
- - Halo (special place in my heart for the 2nd game and Reach)
- - The Legend of Zelda (Breath of the Wild, Minish Cap, Link to the Past)
+ - Oddworld series (Munch's Odyssey, Abe's Odyssey)
+ - Halo series (special place in my heart for the 2nd game and Reach)
+ - The Legend of Zelda series (Breath of the Wild, Minish Cap, Link to the Past)
  - Overwatch
  - Vanilla + Burning Crusade World of Warcraft
- - GTA (Vice City, San Andreas, IV, V)
+ - GTA series (Vice City, San Andreas, IV, V)
  - Burnout Paradise
  - Stardew Valley
  - Downwell
  - Devil Daggers
- - Street Fighter (II, IV, Tekken VS Street Fighter)
+ - Street Fighter series (II, IV, Tekken VS Street Fighter)
  - Robo Recall
  - Lone Echo
 
