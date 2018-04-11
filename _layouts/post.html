@@ -19,7 +19,6 @@ post_class: post-template
         <header class="post-header">
             <h1 class="post-title">{{ page.title }}</h1>
             <section class="post-meta">
-              {% raw %}
               <span class="post-readtime">
                 {% assign words = content | number_of_words %}
                 {% if words < 360 %}
@@ -28,7 +27,6 @@ post_class: post-template
                   {{ words | divided_by:180 }} mins
                 {% endif %}
               </span>
-              {% endraw %}
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
                 {% if page.categories.size > 0 %}
                     {{ page.categories | array_to_sentence_string | prepend: 'on ' }}

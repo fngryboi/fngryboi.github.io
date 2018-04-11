@@ -54,7 +54,6 @@ portfolio: true
             {% if post.categories.size > 0 %}
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
-            {% raw %}
             <span class="post-readtime">
               {% assign words = content | number_of_words %}
               {% if words < 360 %}
@@ -63,7 +62,6 @@ portfolio: true
                 {{ words | divided_by:180 }} mins
               {% endif %}
             </span>
-            {% endraw %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time>
