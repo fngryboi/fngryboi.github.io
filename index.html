@@ -54,7 +54,7 @@ portfolio: true
             {% if post.categories.size > 0 %}
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
-            <p class="post-readtime">1 min read</p>
+            <h6 class="post-readtime">1 min read</h6>
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time>
