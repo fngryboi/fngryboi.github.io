@@ -55,12 +55,13 @@ portfolio: true
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
             <span class="post-readtime">
-              {% assign words = content | number_of_words %}
-              {% if words < 360 %}
-                1 min
-              {% else %}
-                {{ words | divided_by:180 }} mins
-              {% endif %}
+              {% assign words = post.content | number_of_words %}
+                {% if words < 360 %}
+                  1 min
+                {% else %}
+                  {{ words | divided_by:180 }} mins
+                {% endif %}
+              {% end %}
             </span>
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
