@@ -56,12 +56,11 @@ portfolio: true
             {% endif %}
             <span class="post-readtime">
               {% assign words = post.content | number_of_words %}
-                {% if words < 360 %}
-                  1 min
-                {% else %}
-                  {{ words | divided_by:180 }} mins
-                {% endif %}
-              {% end %}
+              {% if words < 360 %}
+                1 min
+              {% else %}
+                {{ words | divided_by:180 }} mins
+              {% endif %}
             </span>
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
