@@ -1,5 +1,5 @@
 ---
-title: Embed stream only when it's live
+title: Embed stream only when live
 layout: post
 categories:
   - streaming
