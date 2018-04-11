@@ -814,6 +814,10 @@ body:not(.post-template) .post-title {
   white-space: nowrap;
 }
 
+article .post .post-readtime {
+  border-left: none;
+}
+
 .user-image {
     position: absolute;
     top: 0;
