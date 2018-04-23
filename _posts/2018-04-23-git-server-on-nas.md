@@ -1,5 +1,5 @@
 ---
-title: Self-hosted Git server on Asustor NAS (the painless way)
+title: Self-hosted Git server on Asustor NAS
 layout: post
 categories:
   - asustor
@@ -8,7 +8,7 @@ categories:
 published: true
 ---
 
-A guide for setting up your own Git server on your Asustor NAS, using [Gogs](https://gogs.io) to make the process a whole lot easier to manage. This guide was written for Asustor because that's what I personally use, but it may prove useful for other NAS environments as well.
+A guide for setting up your own Git server on your Asustor NAS, using [Gogs](https://gogs.io) to make the process a lot easier and painless to manage. This guide was written for Asustor because that's what I personally use, but it may prove useful for other NAS environments as well.
 
 I wanted to host my own Git server and not have to rely on someone else's service, and I've only used Github before and I've run into some problems a few times with that service (for example, files over 100mb won't upload), and some projects I want to be in full control over.
 
