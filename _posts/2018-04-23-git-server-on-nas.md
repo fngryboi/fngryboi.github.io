@@ -1,5 +1,5 @@
 ---
-title: Self-hosted Git server (without the headache) on Asustor NAS
+title: Self-hosted Git server on Asustor NAS (the painless way)
 layout: post
 categories:
   - asustor
@@ -10,7 +10,7 @@ published: true
 
 A guide for setting up your own Git server on your Asustor NAS, using [Gogs](https://gogs.io) to make the process a whole lot easier to manage. This guide was written for Asustor because that's what I personally use, but it may prove useful for other NAS environments as well.
 
-I wanted to host my own Git server and not have to rely on someone else's service, and I've only used Github before and I've run into some problems a few times with that service (for example, files over 100mb won't upload).
+I wanted to host my own Git server and not have to rely on someone else's service, and I've only used Github before and I've run into some problems a few times with that service (for example, files over 100mb won't upload), and some projects I want to be in full control over.
 
 And I'm happy to report that for those already familiar with Github and the Github Desktop app, everything will feel and behave very similar to what you're already used to!
 
@@ -47,7 +47,7 @@ Now that you're up and running, all you have to do is register as a new user on 
 
 ![Git-link location](/assets/images/posts/self-hosted-gogs/git-link.png)
 
-Copy the git link for that repository and open up Github Desktop. In Github Desktop, click on File -> Clone, go to the URL tab, input the git link and where you want to store it locally, after that it may ask you to login with your Gogs account if you set the repository to private.
+Copy the git link for that repository and open up Github Desktop. In Github Desktop, click on File > Clone Repository, go to the URL tab, input the git link and where you want to store it locally, after that it may ask you to login with your Gogs account if you set the repository to private.
 
 ![Git-link in Github Desktop](/assets/images/posts/self-hosted-gogs/clone-repo.png)
 
