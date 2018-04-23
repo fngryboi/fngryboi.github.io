@@ -70,3 +70,10 @@ Note: I've highlighted all the changes that were made from the old "twitch" div 
 That's all you really need to get started. However, if you have some web design skills you can really take this to the next level.
 
 Good luck!
+
+---
+
+**Revisions:**
+
+- Completely reworked the article to make it much easier and to the point as possible.
+- Originally published: 2017-05-07
