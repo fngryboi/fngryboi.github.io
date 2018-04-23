@@ -49,6 +49,6 @@ Now that you're up and running, all you have to do is register as a new user on 
 
 Copy the git link for that repository and open up Github Desktop. In Github Desktop, click on File -> Clone, go to the URL tab, input the git link and where you want to store it locally, after that it may ask you to login with your Gogs account if you set the repository to private.
 
-![Git-link location](/assets/images/posts/self-hosted-gogs/clone-repo.png)
+![Git-link in Github Desktop](/assets/images/posts/self-hosted-gogs/clone-repo.png)
 
 That's it, happy coding!
