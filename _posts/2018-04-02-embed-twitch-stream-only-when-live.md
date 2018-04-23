@@ -1,5 +1,5 @@
 ---
-title: Embed stream only when live
+title: Embed Twitch stream only when live
 layout: post
 categories:
   - streaming
