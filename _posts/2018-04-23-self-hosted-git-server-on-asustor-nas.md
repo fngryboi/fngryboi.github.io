@@ -51,4 +51,8 @@ Copy the git link for that repository and open up Github Desktop. In Github Desk
 
 ![Git-link in Github Desktop](/assets/images/posts/self-hosted-gogs/clone-repo.png)
 
+It's also very easy to migrate over git repostitories from other places, like Github, to your self-hosted Gogs service by simply clicking the plus button in the top-right corner, and then "New Migration" and just follow the instructions there.
+
+![Git Migration](/assets/images/posts/self-hosted-gogs/migrate-repo.png)
+
 That's it, happy coding!
