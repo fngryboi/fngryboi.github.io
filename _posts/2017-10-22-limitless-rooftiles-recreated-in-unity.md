@@ -18,5 +18,4 @@ A short introduction lorem ipsum doler etc etc
 
 
 
-![A GIF of the scene from the movie Limitless, appearing around 30 min in to the movie.](https://i.imgur.com/tIaGoK9.mp4)
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/GlCeu8y" data-context="false"><a href="http://imgur.com/GlCeu8y"></a></blockquote>undefined<script async src="http://s.imgur.com/min/embed.js" charset="utf-8"></script>
