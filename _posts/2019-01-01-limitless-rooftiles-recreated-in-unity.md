@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [TechArt] Rooftiles from Limitless Recreated in Unity
+title: Rooftiles from Limitless Recreated in Unity
 categories:
   - blog
 published: false
