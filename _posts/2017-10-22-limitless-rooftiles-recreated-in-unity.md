@@ -18,4 +18,4 @@ A short introduction lorem ipsum doler etc etc
 
 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/GlCeu8y" data-context="false"><a href="http://imgur.com/GlCeu8y"></a></blockquote>undefined<script async src="http://s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/GlCeu8y" data-context="false"><a href="//imgur.com/GlCeu8y"></a></blockquote>undefined<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
