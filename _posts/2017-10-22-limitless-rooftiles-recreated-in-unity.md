@@ -14,8 +14,10 @@ A short introduction lorem ipsum doler etc etc
 
 ---
 
+<video width="1280" height="360" controls>
+  <source src="../assets/videos/limitless.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/GlCeu8y" data-context="false"><a href="//imgur.com/GlCeu8y"></a></blockquote>undefined<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
