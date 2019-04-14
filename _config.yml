@@ -6,7 +6,6 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: 'http://fngryboi.github.io/'
 about: 'about.html'
 portfolio: 'portfolio.html'
 domain_name: 'http://fngryboi.github.io/'
