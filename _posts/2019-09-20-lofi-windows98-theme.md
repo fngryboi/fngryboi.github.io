@@ -29,6 +29,7 @@ From the original windows 95 theme
 
 These are the things I'm going to fix before publishing this on a standalone repository for others to download and play around with.
 
+- Revamp how it appears on mobile completely, will probably remove the windows scrollbars and just full-height the windows to their content (which means that when looking at an article I'll probably hide the file explorer somehow)
 - Add the option to have the original windows 98 gradient using a if statement and a variable in the config file (this will also disable the background video)
   - The user then has the option to use the default Windows 98 style or embrace the Lo-Fi Aesthetic look by a simple change in the config file.
 - Fix the repository name to be called "Windows 98 Aesthetic"
