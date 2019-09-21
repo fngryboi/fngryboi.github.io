@@ -38,3 +38,4 @@ These are the things I'm going to fix before publishing this on a standalone rep
 - Added animated background picture, can easily change these as you see fit. Just search the web for any combination of "aesthetic", "lo-fi", "anime" and you should find something you like to use.
 - Change tag system to category system so it's neater (?)
 - Add RSS feed button to the topbar
+- Move out the footer to an include object instead for easy editing
