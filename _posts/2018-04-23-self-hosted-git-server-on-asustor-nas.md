@@ -1,10 +1,8 @@
 ---
 title: Self-hosted Git server on Asustor NAS
-layout: post
-categories:
-  - asustor
+layout: default
+tags:
   - git
-  - nas
 published: true
 ---
 

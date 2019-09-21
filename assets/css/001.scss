@@ -1,0 +1,13 @@
+---
+---
+
+@import "reset";
+@import "main";
+
+.default_title {
+	@include bg-gradient-l2r(#ebabf9, #edd2f2);
+}
+
+.default_title h1 {
+	color: #fff;
+}

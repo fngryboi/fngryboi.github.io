@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Rekindling My Love For Playing Guitar
 categories:
   - blog

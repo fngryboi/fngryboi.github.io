@@ -1,10 +1,8 @@
 ---
 title: Embed Twitch stream only when live
-layout: post
+layout: default
 categories:
-  - streaming
-  - twitch.tv
-  - scripts
+  - web
 published: true
 ---
 
@@ -13,7 +11,6 @@ Do you have a website where you want to embed a Twitch.tv stream (maybe your own
 I had the same problem so I decided to throw together a quick script to solve this problem, which I've made available on a Github Gist for anyone to use, which you can see below.
 
 <script src="https://gist.github.com/fngryboi/f5323765e3358ae27d4a97eb2d63aa3c.js"></script>
-
 Also if you want to have more stuff that shows up only when the stream is live, then you could encapsulate the twitch div with a parent div like this (don't forget to move the hiding class to the parent):
 
 {% highlight html %}

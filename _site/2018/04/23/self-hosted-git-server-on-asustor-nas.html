@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    
+        <title>Self-hosted Git server on Asustor NAS</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+    
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="/assets/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<video poster="/assets/video/mp4.png" id="bgvid" playsinline autoplay muted loop>
+		<!-- 
+		- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+		WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+		<source src="/assets/video/mp4.webm" type="video/webm">
+		<source src="/assets/video/mp4.mp4" type="video/mp4">
+	</video>
+
+
+	<div class="wrapper">
+		<div class="default_title">
+			<img src="/assets/img/mycomputer.png" />
+			
+				<h1>Fngryboi's PC</h1>
+			
+		</div>
+		<ul class="topbar">
+	<a href="/about"><li><u>A</u>bout</li></a>
+	<a href="http://twitter.com/fngryboi" target="_blank"><li><u>T</u>witter</li></a>
+	<a href="http://github.com/fngryboi" target="_blank"><li><u>G</u>ithub</li></a>
+</ul>
+		<div class="tag_list">
+			<ul id="tag-list">
+				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
+					<ul>
+						
+						
+						<li><a href="/tag/git/" title="git"><img src="/assets/img/folder.ico" />git</a></li>
+						
+						<li><a href="/tag/homebrew/" title="homebrew"><img src="/assets/img/folder.ico" />homebrew</a></li>
+						
+						<li><a href="/tag/web/" title="web"><img src="/assets/img/folder.ico" />web</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="post_list">
+			
+				<ul>
+					
+					<li><a href="/2019/09/20/lofi-windows98-theme.html" title="Win98 Aesthetic Theme"><img src="/assets/img/file.ico" title="Win98 Aesthetic Theme" /><div id="filename">Win98 Aesthetic Theme</div></a></li>
+					
+					<li><a href="/2018/04/23/self-hosted-git-server-on-asustor-nas.html" title="Self-hosted Git server on Asustor NAS"><img src="/assets/img/file.ico" title="Self-hosted Git server on Asustor NAS" /><div id="filename">Self-hosted Git server on Asustor NAS</div></a></li>
+					
+					<li><a href="/2018/04/09/breaking-out-my-original-xbox.html" title="Breaking out my original Xbox"><img src="/assets/img/file.ico" title="Breaking out my original Xbox" /><div id="filename">Breaking out my original Xbox</div></a></li>
+					
+					<li><a href="/web/2018/04/02/embed-twitch-stream-only-when-live.html" title="Embed Twitch stream only when live"><img src="/assets/img/file.ico" title="Embed Twitch stream only when live" /><div id="filename">Embed Twitch stream only when live</div></a></li>
+					
+				</ul>
+		</div>
+		<div class="post_total">
+			
+				<div class="left">4 object(s)</div>
+			
+			<div class="right">&nbsp;</div>
+		</div>
+	</div>
+	
+        <div class="content">
+			<div class="post_title">
+				<img src="/assets/img/file.png" />
+				<h1>Self-hosted Git server on Asustor NAS</h1>
+				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+				<div class="btn"><span class="fa fa-window-minimize"></span></div>
+			</div>
+			<ul class="topbar">
+				<li>April 23, 2018</li>
+			</ul>
+			<div class="post_content">
+        		<p>A guide for setting up your own Git server on your Asustor NAS, using <a href="https://gogs.io">Gogs</a> to make the process easy and painless. This guide was written for Asustor because that’s what I use, but it may prove useful for other NAS environments as well.</p>
+
+<p>I wanted to host my own Git server and not have to rely on someone else’s service, and I’ve only used Github before and I’ve run into some problems a few times with that service (for example, files over 100mb won’t upload), and some projects I want to be in full control over.</p>
+
+<p>And I’m happy to report that for those already familiar with Github and the Github Desktop app, everything will feel and behave very similar to what you’re already used to!</p>
+
+<h2 id="pre-requirements">Pre-requirements:</h2>
+
+<p>First, you’ll need to open up the Services app in the Asustor dashboard and enable MariaDB and allow remote access to it. Then we’ll need to install PHPMyAdmin from the App Central to access the MariaDB database. Once you have it installed, open it (it will open in a new tab/window), and login with the default login credentials that can be found on the PHPMyAdmin app page on the App Central, in the apps description.</p>
+
+<p>Once logged in to PHPMyAdmin, navigate to User accounts, change the password of the root user just to be safe. Then we need to create a new account for Gogs to use. So click on “Add user account”. Then set the following attributes (don’t mess with the other attributes that aren’t mentioned here, these attributes were taken from Gogs app description in the App Central):</p>
+
+<ul>
+  <li>User name: gogs</li>
+  <li>Generate a password and save it someplace safe (like a Password Manager), that password should automatically have been added to the password text field.</li>
+  <li>Check the box for “Create database with the same name and grant all privileges” (don’t allow Gogs access to everything by checking Global privileges, it only needs access to its own database)</li>
+</ul>
+
+<p>That’s it, finish creating the user by clicking Go in the bottom right corner.</p>
+
+<h2 id="installation">Installation:</h2>
+
+<p>Go on to the App Central and search for Gogs, install it and let it install everything it needs. Then proceed to open the app from the dashboard and you’ll be taken to a new tab/window where you need to input some setup information. Input the following:</p>
+
+<p><strong>Database:</strong></p>
+<ul>
+  <li>Database type: MySQL</li>
+  <li>Host: IP:PORT (the port should match the one you set for MariaDB in Services when enabling it, standard port is 3306, IP should be the same as the ip-address the NAS runs on)</li>
+  <li>User: “gogs”.</li>
+  <li>Password: the one you generated for it while setting up the gogs user and database.</li>
+  <li>Database Name: gogs</li>
+</ul>
+
+<p>The rest you should be able to do yourself :)</p>
+
+<p>Once you’re done you have yourself your very own self-hosted Git service!</p>
+
+<h2 id="gogs--github-desktop">Gogs + Github Desktop</h2>
+
+<p>Now that you’re up and running, all you have to do is register as a new user on your self-hosted Gogs. Then you can sign in and create your first repository. Once you have your repository you can copy the git link found on the right, above the repository files.</p>
+
+<p><img src="/assets/images/posts/self-hosted-gogs/git-link.png" alt="Git-link location" /></p>
+
+<p>Copy the git link for that repository and open up Github Desktop. In Github Desktop, click on File &gt; Clone Repository, go to the URL tab, input the git link and where you want to store it locally, after that it may ask you to login with your Gogs account if you set the repository to private.</p>
+
+<p><img src="/assets/images/posts/self-hosted-gogs/clone-repo.png" alt="Git-link in Github Desktop" /></p>
+
+<p>It’s also very easy to migrate over git repostitories from other places, like Github, to your self-hosted Gogs service by simply clicking the plus button in the top-right corner, and then “New Migration” and just follow the instructions there.</p>
+
+<p><img src="/assets/images/posts/self-hosted-gogs/migrate-repo.png" alt="Git Migration" /></p>
+
+<p>That’s it, happy coding!</p>
+
+				<!--
+					<br>
+<hr>
+<br>
+<div class="donate">
+
+</div>
+				-->
+			</div>
+		</div>
+    
+	<script src="/assets/js/001.js"></script>
+	<script src="/assets/js/002.js"></script>
+	<div class="footer">
+		<p>Created by <a href="http://github.com/fngryboi" target="_blank">Fngryboi</a>
+		<br>
+		<p>Original theme by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT License</a></p>
+	</div>
+</body>
+</html>

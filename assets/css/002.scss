@@ -1,0 +1,25 @@
+---
+---
+
+@import "reset";
+@import "main";
+
+.default_title {
+	@include bg-gradient-l2r(#7b7b7b, #adadad);
+}
+.post_title {
+	@include bg-gradient-l2r(#ebabf9, #edd2f2);
+}
+
+.default_title h1 {
+	color: #bdbdbd;
+}
+
+.post_title h1 {
+	color: #fff;
+}
+
+body .content .post_content p img {
+	max-width: 96%;
+	margin-left:2%;
+}

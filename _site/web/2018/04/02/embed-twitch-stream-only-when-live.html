@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    
+        <title>Embed Twitch stream only when live</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+    
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="/assets/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<video poster="/assets/video/mp4.png" id="bgvid" playsinline autoplay muted loop>
+		<!-- 
+		- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+		WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+		<source src="/assets/video/mp4.webm" type="video/webm">
+		<source src="/assets/video/mp4.mp4" type="video/mp4">
+	</video>
+
+
+	<div class="wrapper">
+		<div class="default_title">
+			<img src="/assets/img/mycomputer.png" />
+			
+				<h1>Fngryboi's PC</h1>
+			
+		</div>
+		<ul class="topbar">
+	<a href="/about"><li><u>A</u>bout</li></a>
+	<a href="http://twitter.com/fngryboi" target="_blank"><li><u>T</u>witter</li></a>
+	<a href="http://github.com/fngryboi" target="_blank"><li><u>G</u>ithub</li></a>
+</ul>
+		<div class="tag_list">
+			<ul id="tag-list">
+				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
+					<ul>
+						
+						
+						<li><a href="/tag/git/" title="git"><img src="/assets/img/folder.ico" />git</a></li>
+						
+						<li><a href="/tag/homebrew/" title="homebrew"><img src="/assets/img/folder.ico" />homebrew</a></li>
+						
+						<li><a href="/tag/web/" title="web"><img src="/assets/img/folder.ico" />web</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="post_list">
+			
+				<ul>
+					
+					<li><a href="/2019/09/20/lofi-windows98-theme.html" title="Win98 Aesthetic Theme"><img src="/assets/img/file.ico" title="Win98 Aesthetic Theme" /><div id="filename">Win98 Aesthetic Theme</div></a></li>
+					
+					<li><a href="/2018/04/23/self-hosted-git-server-on-asustor-nas.html" title="Self-hosted Git server on Asustor NAS"><img src="/assets/img/file.ico" title="Self-hosted Git server on Asustor NAS" /><div id="filename">Self-hosted Git server on Asustor NAS</div></a></li>
+					
+					<li><a href="/2018/04/09/breaking-out-my-original-xbox.html" title="Breaking out my original Xbox"><img src="/assets/img/file.ico" title="Breaking out my original Xbox" /><div id="filename">Breaking out my original Xbox</div></a></li>
+					
+					<li><a href="/web/2018/04/02/embed-twitch-stream-only-when-live.html" title="Embed Twitch stream only when live"><img src="/assets/img/file.ico" title="Embed Twitch stream only when live" /><div id="filename">Embed Twitch stream only when live</div></a></li>
+					
+				</ul>
+		</div>
+		<div class="post_total">
+			
+				<div class="left">4 object(s)</div>
+			
+			<div class="right">&nbsp;</div>
+		</div>
+	</div>
+	
+        <div class="content">
+			<div class="post_title">
+				<img src="/assets/img/file.png" />
+				<h1>Embed Twitch stream only when live</h1>
+				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+				<div class="btn"><span class="fa fa-window-minimize"></span></div>
+			</div>
+			<ul class="topbar">
+				<li>April 2, 2018</li>
+			</ul>
+			<div class="post_content">
+        		<p>Do you have a website where you want to embed a Twitch.tv stream (maybe your own channels stream), but only show it when the channel is actually live?</p>
+
+<p>I had the same problem so I decided to throw together a quick script to solve this problem, which I’ve made available on a Github Gist for anyone to use, which you can see below.</p>
+
+<script src="https://gist.github.com/fngryboi/f5323765e3358ae27d4a97eb2d63aa3c.js"></script>
+
+<p>Also if you want to have more stuff that shows up only when the stream is live, then you could encapsulate the twitch div with a parent div like this (don’t forget to move the hiding class to the parent):</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"parent"</span> <span class="na">class=</span><span class="s">"hide"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- named parent for demonstration purposes, you can name it whatever you want --&gt;</span>
+
+<span class="c">&lt;!-- Here you can place anything you want to show above the embedded stream --&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"twitch"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Here you can place anything you want to show underneath the embedded stream --&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>But to make this work you need to change the javascript bit so it targets the parent div and not the twitch div, like this:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">(</span><span class="s2">"twitch"</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">channel</span><span class="p">:</span> <span class="s2">"USERNAME"</span><span class="p">,</span> <span class="c1">// TODO: Change this...</span>
+  <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+  <span class="na">height</span><span class="p">:</span> <span class="mi">360</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="nx">player</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">READY</span><span class="p">,</span> <span class="nx">initiate</span><span class="p">)</span>
+
+<span class="kd">function</span> <span class="nx">initiate</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">ONLINE</span><span class="p">,</span> <span class="nx">handleOnline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">OFFLINE</span><span class="p">,</span> <span class="nx">handleOffline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">READY</span><span class="p">,</span> <span class="nx">initiate</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">handleOnline</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"parent"</span><span class="p">).</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">);</span> <span class="c1">// *****</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">ONLINE</span><span class="p">,</span> <span class="nx">handleOnline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">OFFLINE</span><span class="p">,</span> <span class="nx">handleOffline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">setMuted</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">handleOffline</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"parent"</span><span class="p">).</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">);</span> <span class="c1">// *****</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">OFFLINE</span><span class="p">,</span> <span class="nx">handleOffline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">Twitch</span><span class="p">.</span><span class="nx">Player</span><span class="p">.</span><span class="nx">ONLINE</span><span class="p">,</span> <span class="nx">handleOnline</span><span class="p">);</span>
+  <span class="nx">player</span><span class="p">.</span><span class="nx">setMuted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Note: I’ve highlighted all the changes that were made from the old “twitch” div to the new “parent” div with <code>// *****</code>.</p>
+
+<p>That’s all you really need to get started. However, if you have some web design skills you can really take this to the next level.</p>
+
+<p>Good luck!</p>
+
+<hr />
+
+<p><strong>Revisions:</strong></p>
+
+<ul>
+  <li>Completely reworked the article to make it much easier and to the point as possible.</li>
+  <li>Originally published: 2017-05-07</li>
+</ul>
+
+				<!--
+					<br>
+<hr>
+<br>
+<div class="donate">
+
+</div>
+				-->
+			</div>
+		</div>
+    
+	<script src="/assets/js/001.js"></script>
+	<script src="/assets/js/002.js"></script>
+	<div class="footer">
+		<p>Created by <a href="http://github.com/fngryboi" target="_blank">Fngryboi</a>
+		<br>
+		<p>Original theme by <a href="http://github.com/h01000110" target="_blank">h01000110 (hi)</a> | Code licensed under <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT License</a></p>
+	</div>
+</body>
+</html>

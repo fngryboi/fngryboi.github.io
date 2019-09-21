@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: default
 title: Breaking out my original Xbox
-categories:
-  - original xbox
-  - xbox
+tags:
   - homebrew
 published: true
 ---

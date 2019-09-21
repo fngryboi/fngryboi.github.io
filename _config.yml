@@ -1,20 +1,25 @@
-name: fngryboi
-description: Dev, Modding, Games, VR.
-meta_description:
-
-markdown: kramdown
-highlighter: rouge
-logo: false
-paginate: 15
-about: 'about.html'
-portfolio: 'portfolio.html'
+url: 'http://fngryboi.github.io'
 domain_name: 'http://fngryboi.github.io/'
-gems: [jekyll-paginate]
 
-# Details for the RSS feed generator
-url:            'http://fngryboi.github.io'
-author:         'fngryboi'
+# variables
+name: Fngryboi's PC
+title: Fngryboi's PC
+description: Development Shenanigans, Gaming, Modding, VR.
+google_verification: null
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable : true
 
 # General Jekyll Config
 lsi: false
+include: [".htaccess"]
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]

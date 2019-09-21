@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Rooftiles from Limitless Recreated in Unity
 categories:
   - blog
