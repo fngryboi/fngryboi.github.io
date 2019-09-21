@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Win98 Aesthetic Theme
-tags:
-    - web
+tags: web
 published: true
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: Embed Twitch stream only when live
 layout: default
-categories:
-  - web
+tags: web
 published: true
 ---
 

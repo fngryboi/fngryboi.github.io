@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Breaking out my original Xbox
-tags:
-  - homebrew
+tags: homebrew
 published: true
 ---
 
