@@ -1,6 +1,7 @@
 ---
-layout: default
-title: C:/about
+layout: page
+title: About
+permalink: /about/
 ---
 
 I'm a firm believer of the following:
@@ -10,3 +11,4 @@ I'm a firm believer of the following:
 - Don't forget to have fun and enjoy it
 
 During the day I work as a web developer, during the nights I mostly tinker with various projects (ranging from hardware modifications to game development and everything in-between) that I sometimes write about [here](/).
+

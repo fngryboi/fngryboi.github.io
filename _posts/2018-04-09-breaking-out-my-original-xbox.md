@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: category-post
 title: Breaking out my original Xbox
 tags: homebrew
 published: true
