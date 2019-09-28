@@ -52,4 +52,4 @@ It's also very easy to migrate over git repostitories from other places, like Gi
 
 ![Git Migration](/assets/images/posts/self-hosted-gogs/migrate-repo.png)
 
-That's it, happy coding!
+That's it, happy coding and version controlling! :)
