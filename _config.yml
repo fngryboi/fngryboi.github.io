@@ -3,6 +3,7 @@ description: My place where I can ramble on...
 baseurl: ""
 url: "https://fngryboi.github.io"
 github_username: fngryboi
+author: fngryboi
 
 # Optional social link, you can choose from the following options:
 # twitter (default), instagram, medium, or dribbble
@@ -15,3 +16,7 @@ theme_color: custom
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-octicons
