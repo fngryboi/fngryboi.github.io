@@ -1,7 +1,7 @@
 ---
 title: Personal Voice Assistant
 layout: post
-categories: zeos
+categories:
 published: false
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: Self-hosted Git server on Asustor NAS
 layout: post
-categories: git
+categories:
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Breaking out my original Xbox
-categories: homebrew
+categories: 
 published: true
 ---
 
