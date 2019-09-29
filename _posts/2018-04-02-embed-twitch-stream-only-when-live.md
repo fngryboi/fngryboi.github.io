@@ -1,6 +1,6 @@
 ---
 title: Embed Twitch stream only when live
-layout: category-post
+layout: post
 categories: web
 published: true
 ---

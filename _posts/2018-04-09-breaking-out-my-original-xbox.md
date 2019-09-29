@@ -1,5 +1,5 @@
 ---
-layout: category-post
+layout: post
 title: Breaking out my original Xbox
 categories: homebrew
 published: true
