@@ -9,7 +9,6 @@ $alt1: #CC6012;
 $alt2: #FF8607;
 $alt3: #FFA463;
 
-
 // Config
 $color-background: $alt1 !default;
 $color-dot-accent: $alt2 !default;
@@ -22,16 +21,9 @@ $color-nav-link: $white !default;
 $color-primary-link: $gray !default;
 $color-border: $yellow;
 
-video {
-width: 80%    !important;
-height: auto   !important;
-margin: 2em auto;
-}
-
 // Import sass partials (used in all themes)
 @import
         "variables",
         "base",
         "components",
-        "utilities"
-;
+        "utilities";

@@ -26,6 +26,15 @@ code {
     }
   }
 
+  video {
+    width: 100%;
+    height: auto;
+    @media (min-width: $breakpoint-lg) {
+            width: (10 / 12 * 100%); // matches col-10
+            height: auto;
+      }
+  }
+
   p, ol, ul {
     font-size: $prose-font-size;
     margin-bottom: 1em;
