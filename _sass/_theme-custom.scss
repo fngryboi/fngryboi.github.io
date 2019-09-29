@@ -22,6 +22,11 @@ $color-nav-link: $white !default;
 $color-primary-link: $gray !default;
 $color-border: $yellow;
 
+video {
+width: 80%    !important;
+height: auto   !important;
+margin: 2em auto;
+}
 
 // Import sass partials (used in all themes)
 @import
