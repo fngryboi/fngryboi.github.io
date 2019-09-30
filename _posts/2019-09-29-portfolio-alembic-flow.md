@@ -1,6 +1,6 @@
 ---
 title: Alembic Animation in UE4
-layout: category-post
+layout: post
 categories: portfolio
 published: true
 ---
