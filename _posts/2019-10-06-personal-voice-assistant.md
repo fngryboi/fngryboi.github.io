@@ -21,6 +21,7 @@ So suddenly my assistant wasn't just doing scheduled scripts but could now also 
 - the IKEA FYRTUR curtains that is also connected to the Trådfri eco-system.
 - Nest of applications (master and slaves, basically acting as remotes to the master)
 - Living in the system tray
+- Interoperability between Schedule Modules, Job Modules, Routine Items etc.
 
 
 
