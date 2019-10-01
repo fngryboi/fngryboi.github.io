@@ -35,6 +35,14 @@ code {
       }
   }
 
+  img {
+    max-width: 100%;
+
+    /*@media (min-width: $breakpoint-lg) {
+      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
+    }*/
+  }
+
   p, ol, ul {
     font-size: $prose-font-size;
     margin-bottom: 1em;
@@ -56,16 +64,6 @@ code {
     ul li, ol li {
       margin-bottom: 0;
     }
-  }
-
-  img {
-
-    max-width: 100%;
-
-    @media (min-width: $breakpoint-lg) {
-      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
-    }
-
   }
 
   blockquote {
