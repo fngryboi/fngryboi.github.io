@@ -23,6 +23,6 @@ The video demonstrates the two ways the rooftiles can flip, either all of them o
 
 The project is made up of a simple ShaderGraph that renders the corresponding letter given to each tile from a script, the script formats everything to its right place and supports word-wrapping and aligning it where you want it, as well as adding margin around the text. There's also options for which rooftiles flip over, either all of them will flip randomly or just the ones with symbols on it.
 
-Even though the flipping pattern isn't as detailed as the scene in the movie, where it seems to have groups of rows that flip sequentially one after another on each row together with other areas doing it seemingly randomly. I'm still pleased with the outcome, and who knows - maybe I'll come back to this one and iterate on it before applying it in one of my game ideas.
+Even though the flipping pattern isn't as detailed as the scene in the movie, where it seems to have groups of rows that flip sequentially one after another on each row together with other areas doing it seemingly randomly. I'm still pleased with the outcome, and who knows - maybe I'll come back to this one and iterate on it before applying it in one of my own games.
 
 *Note: This project was originally composed during the spring of 2019*
