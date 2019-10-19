@@ -12,7 +12,7 @@ Ever since the first time I saw the scene in Limitless where the pills first act
     <source src="/assets/video/portfolio/LimitlessRooftilesScene.ogg" type="video/ogg">
 </video>
 
-And here's the result from that venture, made in Unity and the shader for the rooftile was done in Unity's ShaderGraph.
+And here's the result from that venture, made in Unity and the shader for the rooftile was done using ShaderGraphs.
 
 <video width="1920px" height="1080px" controls loop muted controlsList="nodownload">
     <source src="/assets/video/portfolio/LimitlessRooftilesUnity.mp4" type="video/mp4">
