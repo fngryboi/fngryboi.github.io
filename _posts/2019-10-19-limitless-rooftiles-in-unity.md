@@ -19,7 +19,7 @@ And here's the result from that venture, made in Unity and the shader for the ro
     <source src="/assets/video/portfolio/LimitlessRooftilesUnity.ogg" type="video/ogg">
 </video>
 
-The video demonstrates the two ways the rooftiles can flip, either all of them or just the ones that have a symbol assigned to it. It also showcases some simple examples of alignment (top-right, bottom-left and centered), although the margin is set to 1 on all the examples (meaning there's always at least 1 rooftiles space between the text and the walls).
+The video demonstrates the two ways the rooftiles can flip, either all of them or just the ones that have a symbol assigned to it. It also showcases some simple examples of alignment (top-right, bottom-left and centered), although the margin is set to 1 on all the examples (meaning there's at least 1 rooftile of space between the text and the walls).
 
 The project is made up of a simple ShaderGraph that renders the corresponding letter given to each tile from a script, the script formats everything to its right place and supports word-wrapping and aligning it where you want it, as well as adding margin around the text. There's also options for which rooftiles flip over, either all of them will flip randomly or just the ones with symbols on it.
 
