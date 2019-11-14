@@ -1,5 +1,5 @@
 title: fngryboi
-description: My place where I can ramble on...
+description: My place where I ramble on...
 baseurl: ""
 url: "https://fngryboi.github.io"
 github_username: fngryboi
@@ -12,7 +12,7 @@ social_username: fngryboi
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: custom
+theme_color: fngryboi
 
 # Build settings
 markdown: kramdown
