@@ -1,0 +1,29 @@
+// Yellow theme - could do yellow on borders? - links on inside pages?
+
+// Color variables
+$black: #1b2021;
+$white: #fff;
+$gray: #777;
+
+$coral-reef: #f27368; // #f99b52;
+$sub-accent: #fcdfd2;
+$main-accent: #fcdfd2;
+
+// Config
+$color-background: $coral-reef !default;
+$color-dot-accent: $main-accent !default;
+$color-foreground: $sub-accent !default;
+$color-title: $main-accent !default;
+$color-body-text: $black !default;
+$color-text-accent: $black !default;
+$color-code: $gray !default;
+$color-nav-link: $sub-accent !default;
+$color-primary-link: $gray !default;
+$color-border: $sub-accent !default;
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities";

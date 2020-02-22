@@ -1,18 +1,18 @@
-title: fngryboi
-description: My place where I ramble on...
+title: momeen
+description: Web developer by day, game developer by night.
 baseurl: ""
-url: "https://fngryboi.github.io"
-github_username: fngryboi
-author: fngryboi
+url: "https://momeen.me"
+github_username: momeenme
+author: momeen
 
 # Optional social link, you can choose from the following options:
 # twitter (default), instagram, medium, or dribbble
 social_link: twitter
-social_username: fngryboi
+social_username: momeenme
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: fngryboi
+theme_color: momeen
 
 # Build settings
 markdown: kramdown
