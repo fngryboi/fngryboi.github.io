@@ -1,11 +1,11 @@
 ---
-title: Embed Twitch stream only when live
+title: Dynamic embedding of Twitch streams
 layout: post
 categories:
 published: true
 ---
 
-Do you have a website where you want to embed a Twitch.tv stream (maybe your own channels stream), but only show it when the channel is actually live?
+Do you have a website where you want to embed a Twitch.tv stream, but *only* show it when the channel is live and hide it otherwise?
 
 I had the same problem so I decided to throw together a quick script to solve this problem, which I've made available on a [Github Gist](https://gist.github.com/momeenme/f5323765e3358ae27d4a97eb2d63aa3c) for anyone to use, which you can see below.
 
@@ -132,10 +132,3 @@ Note: I've highlighted all the changes that were made from the old "twitch" div 
 That's all you really need to get started. However, if you have some web design skills you can really take this to the next level.
 
 Good luck!
-
----
-
-**Revisions:**
-
-- Completely reworked the article to make it much easier and to the point as possible.
-- Originally published: 2017-05-07
