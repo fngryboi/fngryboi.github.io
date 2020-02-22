@@ -7,7 +7,7 @@ published: true
 
 Do you have a website where you want to embed a Twitch.tv stream (maybe your own channels stream), but only show it when the channel is actually live?
 
-I had the same problem so I decided to throw together a quick script to solve this problem, which I've made available on a Github Gist for anyone to use, which you can see below.
+I had the same problem so I decided to throw together a quick script to solve this problem, which I've made available on a [Github Gist](https://gist.github.com/momeenme/f5323765e3358ae27d4a97eb2d63aa3c) for anyone to use, which you can see below.
 
 ```
 <html>
@@ -74,7 +74,7 @@ I had the same problem so I decided to throw together a quick script to solve th
 </html>
 ```
 
-[Github Gist of the above code found here](https://gist.github.com/fngryboi/f5323765e3358ae27d4a97eb2d63aa3c.js)
+[Github Gist of the above code found here](https://gist.github.com/momeenme/f5323765e3358ae27d4a97eb2d63aa3c)
 
 Also if you want to have more stuff that shows up only when the stream is live, then you could encapsulate the twitch div with a parent div like this (don't forget to move the hiding class to the parent):
 
