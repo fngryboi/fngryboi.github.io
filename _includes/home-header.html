@@ -26,7 +26,11 @@
             {% endif %}
             </div>
             <div class="inline-block mt-3 mr-1">
-              {% include github.html %}
+              {% if site.github_username %}
+                {% include github.html %}
+              {% else %}
+                {% include dot-accent.html %}
+              {% endif %}
             </div>
             <div class="inline-block mt-3 mr-1">
               {% if site.theme_color == "halloween" %}
