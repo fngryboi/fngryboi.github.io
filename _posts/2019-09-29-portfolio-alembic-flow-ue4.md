@@ -8,8 +8,8 @@ published: true
 This is a little peek on a on-going project that I'm working on, where I used Realflow to create a liquid animation for testing purposes within UE4.
 
 <video width="1920px" height="1080px" controls loop muted controlsList="nodownload">
-    <source src="/assets/video/portfolio/WatermarkedAlembic.mp4" type="video/mp4">
-    <source src="/assets/video/portfolio/WatermarkedAlembic.ogg" type="video/ogg">
+    <source src="/assets/video/portfolio/AlembicFluidUE4.mp4" type="video/mp4">
+    <source src="/assets/video/portfolio/AlembicFluidUE4.ogg" type="video/ogg">
 </video>
 
 The animation was created in Realflow and consists of a liquid domain, a circular spline shape that was created from the letter "O", Daemons for the physics that attracts the liquid along the spline with an added Noise Field component for some visual randomness, there's also a Drag component to make sure that the liquid doesn't stray away from the spline. The Dyverso emitter used for the liquid is turned off about half-way. 
