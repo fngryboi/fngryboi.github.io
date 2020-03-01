@@ -1,0 +1,22 @@
+.projectbarkeep {
+    font-family: reenie_beanieregular, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.redacted {
+    color: black;
+    
+    &:before, &:after {
+      content: attr(data-text);
+      height: 5vmin;
+      display: flex;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    
+    &:after {
+      line-height: 0;
+      transform: translateX(.75vmin);
+    }
+  
+  }
