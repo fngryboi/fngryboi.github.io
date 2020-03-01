@@ -3,11 +3,22 @@ layout: page
 ---
 
 {% if page.category_name %}
+{% if page.category_name == "projectbarkeep"%}
+
+<!-- INCLUDE CUSTOM ART BANNER HERE AND FIX THE HEADER TITLE -->
+
+{% endif %}
   {% assign category_name = page.category_name %}
 {% endif %}
 
 <div class="container mx-auto">
   {% for post in site.categories[category_name] %}
-    {% include post_block.html %}
+
+    {% if post.categories contains "projectbarkeep" %}
+      {% include post_barkeep_block.html %}
+    {% else %}
+      {% include post_block.html %}
+    {% endif %}
+
   {% endfor %}
 </div>

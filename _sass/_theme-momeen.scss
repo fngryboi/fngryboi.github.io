@@ -19,14 +19,10 @@ $color-nav-link: $sub-accent !default;
 $color-primary-link: $gray !default;
 $color-border: $sub-accent !default;
 
-.projectbarkeep {
-        font-family: reenie_beanieregular, 'Helvetica Neue', Arial, sans-serif;
-        text-transform: uppercase;
-}
-
 // Import sass partials (used in all themes)
 @import
         "variables",
         "base",
         "components",
-        "utilities";
+        "utilities",
+        "customizations";
