@@ -1,7 +1,7 @@
 ---
 title: Installing UE4 From Source Code
 layout: post
-categories:
+categories: gamedev
 published: true
 
 ---
