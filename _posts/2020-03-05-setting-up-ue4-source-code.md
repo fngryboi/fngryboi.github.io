@@ -38,3 +38,5 @@ A quick guide for how to compile the UE4 source code on Windows so you can run i
 - Once it's done you can get to the Development Editor by launching UE4.exe found inside the folder `PathToUnrealEngineRepository\Binaries\Win64`
 
 Now you can enjoy developing with Unreal Engine straight from the source code, which in my case became useful as I sometimes use my work laptop for this and don't want to install anything on there that isn't work-related. So now I can relax on the couch and tinker with my projects in UE4 that's running from my external drive on the laptop 😄
+
+If you wanna dig in more you can check out the documentation here: [https://docs.unrealengine.com/en-US/Programming/Development/CompilingProjects/index.html](https://docs.unrealengine.com/en-US/Programming/Development/CompilingProjects/index.html)
