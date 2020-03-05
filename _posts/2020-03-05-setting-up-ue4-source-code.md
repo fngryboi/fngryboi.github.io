@@ -1,5 +1,5 @@
 ---
-title: Installing UE4 From Source Code
+title: Running UE4 From Source Code
 layout: post
 categories: gamedev
 published: true
