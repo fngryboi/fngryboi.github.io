@@ -29,13 +29,10 @@ However, for those uninitiated about this little dream game of mine, let me intr
 
 ---
 
-- Use the article_background as a header for the regular post as well if it's available
-    - Update the background of these posts to have artwork etc
-- Figure out how to push it down below the menu or change the menu to white
-    - In this case also push the article and date and line to be pushed under the background art
-    - center the title vertically as well in that case
-    - change title color to white
 - some kinda animated glow or shadow or frame on the project barkeep posts?
+    - same animated glow on title in posts? or maybe shadows?
+- alternative header colors?
+    - figure this out by going on the page.categories contains 'project-barkeep'
 
 ---
 Not prioritized

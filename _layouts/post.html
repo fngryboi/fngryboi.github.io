@@ -3,28 +3,31 @@ layout: default
 ---
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   {% if page.categories contains "projectbarkeep" %}  
-  {% if page.article_background != nil and page.article_background != "" %}
-  <div class="splash-background" style="background: no-repeat linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('{{page.article_background}}'); background-size:cover;">
-    <div class="container px-2 mx-auto mb4">
-      <h1 class="h0 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
-      <div class="col-4 sm-width-full mt-1 border-top-thin ">
-        <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    {% if page.article_background != nil and page.article_background != "" %}
+    
+    <div class="splash-background" style="background: no-repeat center center fixed linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('{{page.article_background}}'); background-size:cover;">
+      <div class="container px-2 mx-auto mb4">
+        <h1 class="h0 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
+        <div class="col-4 sm-width-full mt-1 border-top-thin ">
+          <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+        </div>
       </div>
     </div>
-  </div>
-  {% else %}
-  <div class="splash-background" style="background: no-repeat linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('/assets/images/backdrop-disclaimer.png'); background-size:cover;">
-    <div class="container px-2 mx-auto mb4">
-      <h1 class="h0 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
-      <div class="col-4 sm-width-full mt-1 border-top-thin ">
-        <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+
+    {% else %}
+
+    <div class="splash-background" style="background: no-repeat center center fixed linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('/assets/images/backdrop-disclaimer.png'); background-size:cover;">
+      <div class="container px-2 mx-auto mb4">
+        <h1 class="h0 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
+        <div class="col-4 sm-width-full mt-1 border-top-thin ">
+          <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+        </div>
       </div>
     </div>
-  </div>
-  {% endif %}
-  <div class="splash-background-fade"></div>
-  
+
+    {% endif %}
   {% else %}
+
     <h1 class="h0 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
     <div class="col-4 sm-width-full mt-1 border-top-thin ">
       <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
