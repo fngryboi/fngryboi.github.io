@@ -1,0 +1,24 @@
+<!-- Renders post date, title, and snippet of text in a post specific to project barkeep articles. -->
+<!-- {{ forloop.index }} gets the post index, this drives where the animation begins -->
+{% capture direction %}{% cycle 'normal', 'reverse' %}{% endcapture %} <!-- used for animation direction -->
+
+{% if post.article_background != nil and post.article_background != "" %}
+<div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('{{post.article_background}}'); background-size:cover;">
+{% else %}
+<div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('/assets/images/backdrop-disclaimer.png'); background-size:cover;">
+{% endif %}
+  <div class="wavey-anchor">
+
+    
+
+    <div class="wavey one" style="animation-delay: calc(-{{ forloop.index }}s * 13); animation-direction: {{direction}};"></div>
+    <div class="wavey two" style="animation-delay: calc(-{{ forloop.index }}s * 5); animation-direction: {{direction}};"></div> 
+  </div>
+  <div class="py-2 mb-2 prose">
+    <a class="no-underline h5 bold text-accent" style="color:#fff" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+    <h2 class="h1 lh-condensed col-9 mt-0">
+      <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+  </div>
+</div>

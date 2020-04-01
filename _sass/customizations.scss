@@ -1,22 +1,249 @@
-.projectbarkeep {
-    font-family: reenie_beanieregular, 'Helvetica Neue', Arial, sans-serif;
-    text-transform: uppercase;
+@import url(//fonts.googleapis.com/css?family=Vibur);
+.kofi-donation {
+  margin: 1vh 0;
 }
 
-.redacted {
-    color: black;
-    
-    &:before, &:after {
-      content: attr(data-text);
-      height: 5vmin;
-      display: flex;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-    
-    &:after {
-      line-height: 0;
-      transform: translateX(.75vmin);
-    }
-  
+.splash-background {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height:75vh;
+  z-index: -2;
+  color:#fff;
+  margin-bottom: $spacer-2;
+}
+
+hr {
+  @media (min-width: $breakpoint-lg) {
+    width: (10 / 12 * 100%); // matches col-10
   }
+}
+
+.project-highlight {
+  background-color:#000;
+  margin-left: -$spacer-2;
+  margin-right: -$spacer-2;
+  position:relative;
+  display: flex;
+  align-items: center;
+  color:#fff;
+  // background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url("/assets/images/backdrop-disclaimer.png");
+  background-size:cover;
+  padding: $spacer-2;
+  padding-bottom: -$spacer-4;
+  border-radius: 0.4em;
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 3em;
+
+  @media (min-width: $breakpoint-lg) {
+    width: (10 / 12 * 100%) + 5%; // matches col-10
+    padding: $spacer-2;
+    margin-left: -$spacer-2;
+    margin-right: -$spacer-2;
+  }
+
+  p, h2 {
+    position:relative;
+    z-index:35;
+    width:100%;
+  }
+  p { 
+    margin-bottom: 0; 
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline dotted #fff !important;
+      color:#fff;
+    }
+    &:active {
+      text-decoration: underline #fff !important;
+      color:#fff;
+    }
+  }
+}
+
+.wavey-anchor {
+  height:100%;
+  width:0%;
+  float:right;
+  right:0;
+  margin-left:100%;
+  right:-40%;
+  position:absolute;
+
+  &:nth-child(even) &.wavey-one {
+    animation-direction: normal;
+  }
+  &:nth-child(odd) &.wavey-two {
+    animation-direction: reverse;
+  }
+}
+
+$timings: random(30), random(60), random(90);
+
+.wavey {
+  content: '';
+  width: 30em;
+  height: 30em;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: 3;
+  right:-20%;
+
+  &.one {
+    background-color: rgba(255, 0, 212, 0.12);
+    animation: waves 13s infinite linear;
+    position: absolute;
+    top:-30%;
+  }
+
+  &.two {
+    background-color: rgba(0, 204, 255, 0.12);
+    animation: waves 27s infinite linear;
+    position: absolute;
+    top:-46%;
+  }
+}
+
+@keyframes waves {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.disclaimercontainer {
+  margin-top: 3vh;
+  margin-bottom: 7em;
+  box-shadow: 0 70px 100px -45px #20001f;
+  border-radius: 0.4em;
+  background-image: url("/assets/images/backdrop-disclaimer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2vh 0.5vw;
+  width: 100%;
+  @media (min-width: $breakpoint-lg) {
+    width: (10 / 12 * 100%); // matches col-10
+  }
+  p {
+    text-align: center;
+    font-size: 96%;
+    margin: 0 auto;
+    color: #fff;
+
+    @media (min-width: $breakpoint-lg) {
+      margin: 2vh auto;
+    }
+  }
+}
+.logo {
+  text-align: center;
+  text-transform:lowercase;
+  width: 100%;
+  height: 15vh;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+.logo b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff44f6, 0 0 0.5em #ff44f6, 0 0 0.1em #ff44f6, 0 10px 3px #000;
+ 
+  @media (max-width: $breakpoint-lg) {
+    font-size: 8vh;
+  }
+}
+.logo b span{
+  animation: blink linear infinite 36s;
+}
+@keyframes blink {
+  1% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  1.1% {
+    color: #333;
+    text-shadow: none;
+  }
+  1.5% {
+    color: #333;
+    text-shadow: none;
+  }
+  1.6% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  1.8% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  2% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  2.2% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  30% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  30.5%{
+      color: #333;
+  }
+  30.6% {
+    text-shadow: none;
+  }
+  30.7% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  30.9% {
+    color: #333;
+    text-shadow: none;
+  }
+  31% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  32.49% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  32.5% {
+    color: #333;
+    text-shadow: none;
+  }
+  32.51% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  32.52% {
+    color: #333;
+    text-shadow: none;
+  }
+  32.6% {
+    color: #333;
+    text-shadow: none;
+  }
+  32.65% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}

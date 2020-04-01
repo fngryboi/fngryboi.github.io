@@ -12,7 +12,7 @@
       <div class="container mx-auto px-2 py-4">
         {% for post in site.posts %}
           {% if post.categories contains "projectbarkeep" %}
-            {% include post_barkeep_block.html %}
+            {% include barkeep/post_barkeep_block.html %}
           {% else %}
             {% include post_block.html %}
           {% endif %}
