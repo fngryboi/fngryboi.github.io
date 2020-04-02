@@ -17,5 +17,8 @@ theme_color: momeen
 # Build settings
 markdown: kramdown
 
+sass:
+    style: compressed
+
 plugins:
   - jekyll-feed

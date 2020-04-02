@@ -29,10 +29,8 @@ However, for those uninitiated about this little dream game of mine, let me intr
 
 ---
 
-- some kinda animated glow or shadow or frame on the project barkeep posts?
-    - same animated glow on title in posts? or maybe shadows?
-- alternative header colors?
-    - figure this out by going on the page.categories contains 'project-barkeep'
+- test compress.html layout from http://jch.penibelst.de/
+    - easiest to test by publishing to github pages by copying all the project barkeep files into master as one big push and bringing the history, thus avoiding bringing weird history stuff in there. And then checking the comments inside the disclaimer page.
 
 ---
 Not prioritized
