@@ -15,7 +15,7 @@ layout: page
   {% for post in site.categories[category_name] %}
 
     {% if post.categories contains "projectbarkeep" %}
-      {% include post_barkeep_block.html %}
+      {% include barkeep/post_barkeep_block.html %}
     {% else %}
       {% include post_block.html %}
     {% endif %}

@@ -33,6 +33,7 @@ However, for those uninitiated about this little dream game of mine, let me intr
     - easiest to test by publishing to github pages by copying all the project barkeep files into master as one big push and bringing the history, thus avoiding bringing weird history stuff in there. And then checking the comments inside the disclaimer page.
 
 ---
+
 Not prioritized
 - update about me
 - https://schema.org/BlogPosting make sure these are in

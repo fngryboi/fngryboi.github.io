@@ -3,9 +3,11 @@
 {% capture direction %}{% cycle 'normal', 'reverse' %}{% endcapture %} <!-- used for animation direction -->
 
 {% if post.article_background != nil and post.article_background != "" %}
-<div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('{{post.article_background}}'); background-size:cover;">
+  <div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('{{post.article_background}}'); background-size:cover;">
+  <!-- <div class="project-highlight" style=""> -->
 {% else %}
-<div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('/assets/images/backdrop-disclaimer.png'); background-size:cover;">
+  <div class="project-highlight" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(109, 30, 78, 0.78)), url('/assets/images/backdrop-disclaimer.png'); background-size:cover;">
+  <!-- <div class="project-highlight" style=""> -->
 {% endif %}
   <div class="wavey-anchor">
 
