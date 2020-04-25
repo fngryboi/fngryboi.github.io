@@ -168,7 +168,7 @@ hr {
       z-index: -1;
       transform: skewY(-1deg) skewX(-6deg);
       -webkit-transform: skewY(-1deg) skewX(-6deg);
-      will-change: opacity;
+      will-change: transform, opacity;
     }
   }
 
