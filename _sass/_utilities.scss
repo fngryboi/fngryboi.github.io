@@ -3,7 +3,6 @@
   font-size: $h0-mobile;
   line-height: 1.0125;
   margin-top: 0.85em;
-  word-wrap: break-word;
 
   @media (min-width: $breakpoint-lg) {
     font-size: $h0-desktop;
@@ -39,7 +38,7 @@
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
+.header-background { background-color: $color-background; position:relative; z-index: 9999; }
 .header-border { border-color: $color-foreground; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
