@@ -145,6 +145,7 @@ hr {
     text-shadow: 0.04em 0.04em 0 rgba(0,0,0,0.4);
     z-index: 1;
     mix-blend-mode: screen;
+    -webkit-mix-blend-mode: screen;
     margin-bottom:.75em;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -152,11 +153,12 @@ hr {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
+    will-change: opacity;
 
-    &:after {
+    &:before {
       content: "";
       display: block;
-      background-color: #cb2d3e;
+      background-color: rgb(175, 0, 146);
       background-image: linear-gradient(165deg, rgb(175, 0, 146),rgb(0, 163, 204) );
       position: absolute;
       left: -2em;
@@ -165,7 +167,8 @@ hr {
       bottom: -0.28em;
       z-index: -1;
       transform: skewY(-1deg) skewX(-6deg);
-      
+      -webkit-transform: skewY(-1deg) skewX(-6deg);
+      will-change: opacity;
     }
   }
 
