@@ -138,38 +138,22 @@ hr {
 
   h2 {
     position: relative;
-    display: inline-block;
-    color: rgba(0,0,0,1);
-    line-height: .85;
-    margin: 0.5em auto;
-    text-shadow: 0.04em 0.04em 0 rgba(0,0,0,0.4);
+    color: rgb(255, 255, 255);
+    margin: 0.25em auto;
     z-index: 1;
-    mix-blend-mode: screen;
-    -webkit-mix-blend-mode: screen;
-    margin-bottom:.75em;
     overflow-wrap: break-word;
     word-break: break-word;
     hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    will-change: opacity;
-
-    &:before {
-      content: "";
-      display: block;
-      background-color: rgb(175, 0, 146);
-      background-image: linear-gradient(165deg, rgb(175, 0, 146),rgb(0, 163, 204) );
-      position: absolute;
-      left: -2em;
-      right: 0em;
-      top: -0.48em;
-      bottom: -0.28em;
-      z-index: -1;
-      transform: skewY(-1deg) skewX(-6deg);
-      -webkit-transform: skewY(-1deg) skewX(-6deg);
-      will-change: transform, opacity;
-    }
+    // will-change: opacity;
+    display: inline-block;
+    background: linear-gradient(330deg, rgb(0, 151, 189) 36%, rgb(211, 0, 176) 100%);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p, h2 {
@@ -185,12 +169,21 @@ hr {
   }
   a {
     &:hover {
-      // text-decoration: underline dotted #fff !important;
       color:#fff;
+      background: rgb(216, 216, 216);
+      background-size: 100% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &:active {
       // text-decoration: underline #fff !important;
-      color:rgb(216, 216, 216);
+      color:rgb(177, 177, 177);
+      background: rgb(177, 177, 177);
+      background-size: 100% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }

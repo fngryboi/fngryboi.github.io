@@ -60,7 +60,7 @@ In the future, all of these disclaimers will be summarized with the following ba
 
 I don't want to plan too much into the future because personally that just feels too overwhelming, so instead I'm going to add a section in a monthly progress post of what's in the scope for the near future.
 
-The first thing that I'll be spending time on this coming month is to play around and nail down the environmental art style I'll be going for with the game. I have a few ideas so I'll be making up a smaller environment where I can switch and swap to see which direction I'd like to go in. 
+The first thing that I'll be spending time on this coming month is to start working on the level design, after which I'll take a small part of the level to play around with in order to nail down the environmental art style I'll be going for with the game. I have a few ideas so I'll be making up a smaller environment where I can switch and swap to see which direction I'd like to go in. 
 
 But not only that, if things go well I want to work on the gameplay elements as well &mdash; such as the barkeeping aspect of the game.
 
