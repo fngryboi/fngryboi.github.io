@@ -138,7 +138,7 @@ hr {
 
   h2 {
     position: relative;
-    color: rgb(255, 255, 255);
+    color: rgb(203, 185, 253); // lavender-ish
     margin: 0.25em auto;
     z-index: 1;
     overflow-wrap: break-word;
@@ -148,12 +148,12 @@ hr {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     // will-change: opacity;
-    display: inline-block;
-    background: linear-gradient(330deg, rgb(0, 151, 189) 36%, rgb(211, 0, 176) 100%);
-    background-size: 100% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // display: inline-block;
+    // background: linear-gradient(330deg, rgb(0, 151, 189) 36%, rgb(211, 0, 176) 100%);
+    // background-size: 100% 100%;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p, h2 {
@@ -169,21 +169,11 @@ hr {
   }
   a {
     &:hover {
-      color:#fff;
-      background: rgb(216, 216, 216);
-      background-size: 100% 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color:rgb(175, 159, 221);
     }
     &:active {
       // text-decoration: underline #fff !important;
-      color:rgb(177, 177, 177);
-      background: rgb(177, 177, 177);
-      background-size: 100% 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color:rgb(150, 127, 218);
     }
   }
 }
