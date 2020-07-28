@@ -1,7 +1,7 @@
 ---
 title: Notes
 layout: post
-categories: projectbarkeep
+categories:
 published: true
 ---
 
