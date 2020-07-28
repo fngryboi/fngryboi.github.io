@@ -79,11 +79,19 @@ body {
     }
   }
 
+  .date-container {
+    max-width: 64em;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 1.2em;
+  }
+
   .border-top-thin {
     width: 40vw;
     max-width: 20em;
-    position: absolute;
-    bottom: 0;
   }
 
   p {
