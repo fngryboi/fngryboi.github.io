@@ -5,9 +5,9 @@ $black: #181818;
 $white: #fff;
 $gray: #777;
 $yellow: #fec92e;
-$alt1: #CC6012;
-$alt2: #FF8607;
-$alt3: #FFA463;
+$alt1: #561f55;
+$alt2: #ff8b6a;
+$alt3: #cf56a1;
 
 // Config
 $color-background: $alt1 !default;
@@ -26,4 +26,5 @@ $color-border: $yellow;
         "variables",
         "base",
         "components",
-        "utilities";
+        "utilities",
+        "customizations";

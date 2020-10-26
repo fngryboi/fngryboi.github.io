@@ -12,7 +12,7 @@ instagram: itscasperalexis
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: momeen
+theme_color: halloween # momeen
 
 # Build settings
 markdown: kramdown
