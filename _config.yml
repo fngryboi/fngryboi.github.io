@@ -22,3 +22,5 @@ sass:
 
 plugins:
   - jekyll-feed
+
+include: [".well-known"]
