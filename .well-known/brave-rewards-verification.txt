@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: casperalexis.com
+Token: 510a1a967ed903d10577c8d22682c72c2bebb325db9ef0b22846653abb2cc792
